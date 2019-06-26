@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116293384-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-116293384-1');
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="./figures/random/favicon.png">
+        <title>Sea Ice Concentration Maps</title>
+        <!-- Bootstrap core CSS -->
+        <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        
+        <script type="text/javascript">    
+         function pad(n, width, z) {
+           z = z || '0';
+           n = n + '';
+           return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+         }
+         
+         function UpdateImage() {
+         
+             FI = pad(document.form1.FI.value, 2);
+             variable = document.form1.variable.value;
+             metric = document.form1.metric.value;
+             idate = document.getElementById("locality-dropdown").value;
+             if (FI=='99') {
+                 ext = '.gif';
+             } else {
+                 ext = '.png';
+             }
+             document.image1.src = "./figures/model/all_model/"+variable+"/maps_weekly_NEW/panArctic_"+metric+"_forecast_"+
+                 idate+"_"+FI+ext+"?342038402";
+         }
+      </script>   
+ 
+      
+   </head>
+    
+   <body onload="UpdateImage(0)">
+      <form name="form1">
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="./index">SIPN2</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PortalAbout.html">About</a>
+               </li>
+	       <li class="nav-item dropdown">
+		 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+		 <div class="dropdown-menu">
+		   <a class="dropdown-item" href="modelinformation.html">Model Information</a>
+		   <a class="dropdown-item" href="modelavailability.html">Forecast Availability</a>
+		   <a class="dropdown-item" href="methods.html">Methods</a>
+		 </div>
+	       </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="panarcticmaps.html">Pan-Arctic Maps</a>
+               </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Evaluation.html">Model Evaluation</a>
+               </li> 
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalmaps.html">Regional Maps</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalextent.html">Pan-Arctic & Regional Extents</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="observations.html">Observations</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <main role="main">
+         <div class="jumbotron">
+            <div class="container">
+               <!-- <h1 class="display-3">Welcome to the SIPN2 portal</h1> -->
+               <img src="./figures/random/sipn2_banner_full.png" class="img-fluid">
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="gallery col-xl-12 -col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 class="gallery-title">Model Maps</h1>
+               </div>
+               <div class="row">
+                 <div class="gallery_product col-xl-2 col-lg-2 col-md-2 col-sm-1 col-xs-1">
+                <!--     Variable to Plot:<br>
+                     <input type="radio" name="variable" value="sic" checked="checked" onclick="UpdateImage(0)">Sea ice concentration<br> -->
+                     <!-- <input type="radio" name="variable" value="hi" onclick="UpdateImage(0)">Sea ice thickness<br> -->
+                     <br>
+                     Metric:<br>
+                     <input type="radio" name="metric" value="mean" checked="checked" onclick="UpdateImage(0)">Ensemble Mean<br>
+                     <input type="radio" name="metric" value="SIP" onclick="UpdateImage(0)">Sea Ice Probability<br>
+                     <input type="radio" name="metric" value="anomaly" onclick="UpdateImage(0)">Anomaly<br>
+                     <br>
+                     Initial time :<br>
+                     <p>
+                        <select id="locality-dropdown" name="locality" onchange="UpdateImage(0)">
+                        </select>
+                     </p>
+                     <!--<br>
+                        <input type="button" value="-1 Day" onclick="ChangeDate(-1);UpdateImage(0)" accesskey="B">
+                        <input type="button" value="+1 Day" onclick="ChangeDate(1);UpdateImage(0)" accesskey="N">
+                        <input type="button" value="latest" onclick="ChangeDate(0);UpdateImage(0)">
+                        <br><br><br> -->
+                     <br>
+                     Lead time:<br>
+          <!--           <input type="radio" name="FI" value="99"   onclick="UpdateImage(0)">Animation<br> -->
+                     <input type="radio" name="FI" value="0"                    onclick="UpdateImage(0)">0 Week<br>
+                     <input type="radio" name="FI" value="1"                    onclick="UpdateImage(0)">1 Week<br>
+                     <input type="radio" name="FI" value="2"   checked="checked" onclick="UpdateImage(0)">2 Week<br>
+                     <input type="radio" name="FI" value="3"                    onclick="UpdateImage(0)">3 Week<br>
+                     <input type="radio" name="FI" value="4"                    onclick="UpdateImage(0)">4 Week<br>
+                     <input type="radio" name="FI" value="5"                    onclick="UpdateImage(0)">2 Months<br>
+                     <input type="radio" name="FI" value="6"                    onclick="UpdateImage(0)">3 Months<br>
+                     <input type="radio" name="FI" value="7"                    onclick="UpdateImage(0)">4 Months<br>
+                     <input type="radio" name="FI" value="8"                    onclick="UpdateImage(0)">5 Months<br>
+                     <input type="radio" name="FI" value="9"                    onclick="UpdateImage(0)">6 Months<br>
+            <!--         <input type="radio" name="FI" value="10"                    onclick="UpdateImage(0)">7 Months<br>
+                     <input type="radio" name="FI" value="11"                    onclick="UpdateImage(0)">8 Months<br>
+                     <input type="radio" name="FI" value="12"                    onclick="UpdateImage(0)">9 Months<br>
+                     <input type="radio" name="FI" value="13"                    onclick="UpdateImage(0)">10 Months<br>
+                     <input type="radio" name="FI" value="14"                    onclick="UpdateImage(0)">11 Months<br>
+                     <input type="radio" name="FI" value="15"                    onclick="UpdateImage(0)">12 Months<br> -->
+                     <p>
+                        All model's have been regridded to <a href="https://nsidc.org/data/polar-stereo/ps_grids.html"
+                           >NSIDC's polar stereographic projection.</a>
+                     </p>
+                     <br>
+                      <p> <font size="3">See a Bug or Error? Please submit an <a href='https://github.com/NicWayand/ESIO/issues/new/choose'>Issue!</a> </font> </p>
+                  </div>
+                  <div class="gallery_product col-xl-10 col-lg-10 col-md-11 col-sm-1 col-xs-1">
+                     <img src="" alt="Image is being updated, please check back later." name="image1" class="img-fluid">
+                      
+            <br>
+            <p>          
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Extent_Model_Obs.ipynb">
+		      source code.</a>
+                </p>
+                      <br>
+                      <p> *Contains modified Copernicus Climate Change Service information 2018. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains </p>
+                      
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+          
+          
+      <footer class="container">
+         <p>&copy; SIPN2 2018</p>
+         <p>Question or comments? Email nicway@uw.edu</p>
+      </footer>
+          
+          
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">    </script>    
+      <script> window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="./assets/js/vendor/popper.min.js"></script>
+      <script src="./dist/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src='js/main.js'></script>
+          
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+      <script type="text/javascript">
+        let dropdown = $('#locality-dropdown');
+        dropdown.empty();
+	
+        const url = './figures/model/all_model/sic/maps_weekly_NEW/plotdates_current.json'
+
+        // Populate dropdown with list of provinces
+        $.getJSON(url, function (data) {
+         $.each(data, function (key, entry) {
+           dropdown.append($('<option> selected="true" </option>').attr('value', entry.date).text(entry.date));
+        })
+
+	// select a few dates down as default since data is more complete
+	dropdown.prop('selectedIndex', 3);
+
+        });
+        UpdateImage(0)
+      </script>
+          
+       
+    
+          
+    </body>
+</html>

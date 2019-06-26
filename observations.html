@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./figures/random/favicon.png">
+      
+    <title>Sea Ice Observations</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+      
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116293384-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116293384-1');
+    </script>    
+    
+ 
+      
+  </head>
+
+  <body>
+
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="./index">SIPN2</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PortalAbout.html">About</a>
+               </li>
+	       <li class="nav-item dropdown">
+		 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+		 <div class="dropdown-menu">
+		   <a class="dropdown-item" href="modelinformation.html">Model Information</a>
+		   <a class="dropdown-item" href="modelavailability.html">Forecast Availability</a>
+		   <a class="dropdown-item" href="methods.html">Methods</a>
+		 </div>
+	       </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="panarcticmaps.html">Pan-Arctic Maps</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalmaps.html">Regional Maps</a>
+               </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Evaluation.html">Model Evaluation</a>
+               </li> 
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalextent.html">Pan-Arctic & Regional Extents</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="observations.html">Observations</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+    <main role="main">
+
+      <div class="jumbotron">
+        <div class="container">
+          <!-- <h1 class="display-3">Welcome to the SIPN2 portal</h1> -->
+            <img src="./figures/random/sipn2_banner_full.png" class="img-fluid">
+        </div>
+      </div>
+       
+<div class="container">
+        <div class="row">
+        <div class="gallery col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Pan-Arctic Observations</h1>
+            <p> <font size="3">See a Bug or Error? Please submit an <a href='https://github.com/NicWayand/ESIO/issues/new/choose'>Issue!</a> </font> </p>
+        </div>
+
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="All">All</button>
+            <button class="btn btn-default filter-button" data-filter="Extents">Extents</button>
+            <button class="btn btn-default filter-button" data-filter="Most_Recent">Most Recent</button>
+            <button class="btn btn-default filter-button" data-filter="Recent_change">Recent Change</button>
+
+        </div>
+        <div class="row">
+
+
+            <div class="gallery_product col-xl-6 col-lg-6 col-md-6 col-sm-1 col-xs-1 filter Extents All">
+                <img src="./figures/obs/NSIDC_0081/standard/panArcticSIC_Forecast_3months.png?14090" class="img-fluid">
+                <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_observations.ipynb">Source Code.</a>
+            </div>
+
+            <div class="gallery_product col-xl-6 col-lg-6 col-md-6 col-sm-1 col-xs-1 filter Extents All">
+                <img src="./figures/obs/NSIDC_0081/standard/panArcticSIC_Forecast_30days.png?14090" class="img-fluid">
+                <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_observations.ipynb">Source Code.</a>
+            </div>
+
+            <div class="gallery_product col-xl-7 col-lg-7 col-md-7 col-sm-1 col-xs-1 filter Extents All">
+              <img src="./figures/obs/NSIDC_0081/standard/panArcticSIC_Forecast_Regional_CurrentSeason.png?14090" class="img-fluid"> <br>
+	      <img src="./figures/obs/NSIDC_0081/standard/panArcticSIC_Forecast_RegionalAnomalies_CurrentSeason.png?14090" class="img-fluid">
+                <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_observations.ipynb">Source Code.</a>
+            </div>
+            
+            <div class="gallery_product col-xl-5 col-lg-5 col-md-5 col-sm-1 col-xs-1 filter Extents All">
+                <img src="./figures/obs/NSIDC_0081/standard/Regional_Map.png?14090" class="img-fluid">
+                <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_observations.ipynb">Source Code.</a>
+            </div>
+
+            <div class="gallery_product col-xl-4 col-lg-4 col-md-4 col-sm-1 col-xs-1 filter Most_Recent All">
+              <img src="./figures/obs/NSIDC_0081/standard/panArcticSIC_Forecast_Map.png?14090"  width="80%" class="img-fluid"> <br>
+	      <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_observations.ipynb">Source Code.</a>
+	    </div>
+	    
+            <div class="gallery_product col-xl-4 col-lg-4 col-md-4 col-sm-1 col-xs-1 filter Most_Recent All">
+                <img src="./figures/obs/NSIDC_0081/standard/panArcticSIC_SIC_anomaly_fromClimoTrend.png?14090"  width="80%" class="img-fluid"> <br>
+                <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_observations.ipynb">Source Code.</a>
+            </div>
+            
+            <div class="gallery_product col-xl-4 col-lg-4 col-md-4 col-sm-1 col-xs-1 filter Most_Recent All">
+                <img src="./figures/obs/NSIDC_0081/standard/panArcticSIC_SIC_anomaly.png?14090" width="80%" class="img-fluid"> <br>
+                <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_observations.ipynb">Source Code.</a>
+            </div>
+
+            <div class="gallery_product col-xl-4 col-lg-4 col-md-4 col-sm-1 col-xs-1 filter Recent_change All">
+                <img src="./figures/obs/NSIDC_0081/standard/panArcticSIC_Forecast_Map_1Week_Change.png?14090"  width="80%" class="img-fluid"> <br> 
+                <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_observations.ipynb">Source Code.</a>
+            </div>
+            
+            <div class="gallery_product col-xl-4 col-lg-4 col-md-4 col-sm-1 col-xs-1 filter Recent_change All">
+                <img src="./figures/obs/NSIDC_0081/standard/panArcticSIC_Forecast_Map_2Week_Change.png?14090"  width="80%" class="img-fluid"> <br> 
+                <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_observations.ipynb">Source Code.</a>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+      </main>
+      
+    
+
+    <footer class="container">
+      <p>&copy; SIPN2 2018</p>
+       <p>Question or comments? Email nicway@uw.edu</p> 
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">    </script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>      
+    
+  </body>
+</html>

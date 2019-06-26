@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./figures/random/favicon.png">
+      
+    <title>Regional Extents</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+      
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116293384-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116293384-1');
+    </script>    
+    
+ 
+      
+  </head>
+
+  <body>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="./index">SIPN2</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PortalAbout.html">About</a>
+               </li>
+	       <li class="nav-item dropdown">
+		 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+		 <div class="dropdown-menu">
+		   <a class="dropdown-item" href="modelinformation.html">Model Information</a>
+		   <a class="dropdown-item" href="modelavailability.html">Forecast Availability</a>
+		   <a class="dropdown-item" href="methods.html">Methods</a>
+		 </div>
+	       </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="panarcticmaps.html">Pan-Arctic Maps</a>
+               </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Evaluation.html">Model Evaluation</a>
+               </li> 
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalmaps.html">Regional Maps</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalextent.html">Pan-Arctic & Regional Extents</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="observations.html">Observations</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+    <main role="main">
+
+      <div class="jumbotron">
+        <div class="container">
+          <!-- <h1 class="display-3">Welcome to the SIPN2 portal</h1> -->
+            <img src="./figures/random/sipn2_banner_full.png" class="img-fluid">
+        </div>
+      </div>
+       
+<div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	  <h2 class="gallery-title">Pan-Arctic & Regional Extent Forecasts</h2>
+	  <div align="center">
+	    <p> <b> The forecasts below were initialized up to 2 months prior to present day. </b> </p>
+	    <p> <b> We have forecasts initialized earlier and can make a custom set of figures upon request. </b> </p> 
+        </div>
+        <div class="row">
+            <div align="center">
+                
+                <p> <b> (Click on below buttons to view individual regions or scroll down) </b> </p>
+                
+                <button class="btn btn-default filter-button" data-filter="All">All</button>
+                <button class="btn btn-default filter-button" data-filter="Pan_Arctic">Pan-Arctic</button>
+                <button class="btn btn-default filter-button" data-filter="Sea_of_Okhotsk">Sea of Okhotsk</button>
+                <button class="btn btn-default filter-button" data-filter="Bering">Bering</button>
+                <button class="btn btn-default filter-button" data-filter="Hudson_Bay">Hudson Bay</button>
+                <button class="btn btn-default filter-button" data-filter="St_John">St John's</button>
+                <button class="btn btn-default filter-button" data-filter="Baffin_Bay">Baffin Bay</button>
+
+                <button class="btn btn-default filter-button" data-filter="East_Greenland_Sea">East Greenland Sea</button>
+                <button class="btn btn-default filter-button" data-filter="Kara_Sea">Kara Sea</button>
+                <button class="btn btn-default filter-button" data-filter="Laptev_Sea">Laptev Sea</button>
+                
+
+                <button class="btn btn-default filter-button" data-filter="Barents_Sea">Barents Sea</button>
+                <button class="btn btn-default filter-button" data-filter="East_Siberian_Sea">East Siberian Sea</button>
+                <button class="btn btn-default filter-button" data-filter="Chukchi_Sea">Chukchi Sea</button>
+                <button class="btn btn-default filter-button" data-filter="Beaufort_Sea">Beaufort Sea</button>
+                <button class="btn btn-default filter-button" data-filter="Canadian_Islands">Canadian Islands</button>
+                <button class="btn btn-default filter-button" data-filter="Central_Arctic">Central Arctic</button>
+                
+                <button class="btn btn-default filter-button" data-filter="Map">Map</button>
+
+                
+            </div>
+        </div>
+        <div class="row">
+
+          <div class="gallery_product col-lg-10 col-md-6 col-sm-1 col-xs-1 filter All Pan_Arctic">
+                    <a href="./figures/model/all_model/sic/regional_timeseries/Region_PanArctic_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_PanArctic_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+</p> <p> *Contains modified Copernicus Climate Change Service information 2018-2019, referring to ECMWF-YOPP*, ECMWF-C3S* and UKMO-C3S* models. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains 
+		    
+		    </p><p> Some models appear to have a large bias at the initialization time, which in most cases is because their land-sea mask is quite different than the obaservations. Scanning through the regional maps can help locate the region where the bias is greatest. </p><p>
+	      Two "benchmark" forecasts are given based purely upon observations. The Climatological Trend is an extrapolation of the long term trend for each day. The Damped Anomaly is the persistence of the anomaly starting on days ~30 days apart, damped into the future and added to the climatological trend.
+		</p><p>
+		    
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Extent_Model_Obs.ipynb">
+		      source code. </a></b> </p>
+            </div>
+	    
+            <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Sea_of_Okhotsk">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Sea_of_Okhotsk_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Sea_of_Okhotsk_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>
+            
+            <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Bering">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Bering_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Bering_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>
+            
+            <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Hudson_Bay">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Hudson_Bay_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Hudson_Bay_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>
+            
+            <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All St_John">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_St_John_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_St_John_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>
+            
+            <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Baffin_Bay">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Baffin_Bay_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Baffin_Bay_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>            
+            
+             <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All East_Greenland_Sea">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_East_Greenland_Sea_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_East_Greenland_Sea_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>           
+            
+             <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Barents_Sea">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Barents_Sea_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Barents_Sea_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>  
+            
+             <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Laptev_Sea">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Laptev_Sea_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Laptev_Sea_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>  
+            
+             <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Kara_Sea">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Kara_Sea_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Kara_Sea_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>              
+  
+             <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All East_Siberian_Sea">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_East_Siberian_Sea_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_East_Siberian_Sea_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>  
+              
+             <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Chukchi_Sea">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Chukchi_Sea_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Chukchi_Sea_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>              
+            
+             <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Beaufort_Sea">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Beaufort_Sea_extent_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Beaufort_Sea_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>                  
+            
+             <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Canadian_Islands">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Beaufort_Canadian_Islands_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Canadian_Islands_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>    
+            
+            
+             <div class="gallery_product col-lg-12 col-md-6 col-sm-1 col-xs-1 filter All Central_Arctic">
+                <a href="./figures/model/all_model/sic/regional_timeseries/Region_Beaufort_Central_Arctic_forecast_raw_predicted.html?25879" title="">
+                    <img src="./figures/model/all_model/sic/regional_timeseries/Region_Central_Arctic_extent_forecast_raw_predicted.png?25879" class="img-fluid"></a>
+                <p> <b> Red stars show each initialization time. Each line represents a single model ensemble.
+		    We have regridded all model output to a common grid, but applied no further post processing.
+		    Some forecasts are bias corrected before we acquired them.
+		    More on <a href="modelinformation.html"> forecast source and model information, </a>
+		    our <a href="methods.html"> methods, </a> and
+		    <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">
+		      source code. </a></b> </p>
+            </div>    
+                        
+            
+            <div class="gallery_product col-xl-12 col-lg-6 col-md-6 col-sm-1 col-xs-1 filter All Map">
+                <img src="./figures/obs/NSIDC_0081/standard/Regional_Map.png?25879" width="50%" height="50%" class="img-fluid">
+                <p> <b> Map of Arctic Regions referenced in above plots. <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_Regional_Extent.ipynb">Source Code.</a></b> </p>
+            
+            
+        
+                    <br>
+                      <p> *Contains modified Copernicus Climate Change Service information 2018. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains </p>
+            
+                </div>
+            
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+      </main>
+      
+    
+
+    <footer class="container">
+      <p>&copy; SIPN2 2018</p>
+       <p>Question or comments? Email nicway@uw.edu</p> 
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">    </script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>      
+    
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="./figures/random/favicon.png">
+      <title>Sea Ice Prediction Network Phase II (SIPN2)</title>
+      <!-- Bootstrap core CSS -->
+      <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116293384-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-116293384-1');
+      </script>    
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="./index">SIPN2</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PortalAbout.html">About</a>
+               </li>
+	       <li class="nav-item dropdown">
+		 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+		 <div class="dropdown-menu">
+		   <a class="dropdown-item" href="modelinformation.html">Model Information</a>
+		   <a class="dropdown-item" href="modelavailability.html">Forecast Availability</a>
+		   <a class="dropdown-item" href="methods.html">Methods</a>
+		 </div>
+	       </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="observations.html">Observations</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="panarcticmaps.html">Pan-Arctic Maps</a>
+               </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Evaluation.html">Model Evaluation</a>
+               </li> 
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalmaps.html">Regional Maps</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalextent.html">Pan-Arctic & Regional Extents</a>
+               </li>
+               <!--<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                  </li> -->
+            </ul>
+         </div>
+      </nav>
+       
+      <main>
+         <div class="jumbotron">
+            <div class="container">
+               <!-- <h1 class="display-3">Welcome to the SIPN2 portal</h1> -->
+               <img src="./figures/random/sipn2_banner_full.png" class="img-fluid">
+            </div>
+         </div>
+          
+         <div class="container">
+            <p class="main_text">
+               This sea ice prediction portal is a contribution to the Sea Ice Outlook and the <a href="www.arcus.org/sipn">Sea Ice Prediction Network</a>. Our mission is to advance the study of year-round sea ice prediction and 
+               predictability at lead times from one week to one year.
+            </p>
+         </div>
+         <div class="container">
+            <p class="main_text">       
+               The portal displays analysis of sea ice forecasts and compares with observations. Presently, most of our data are sea
+               ice concentration, but we intend to expand the analysis to sea ice thickness and deformation and snow depths on 
+               sea ice. The portal automatically regrids forecast output to a common grid (the passive microwave 25 km x 25 km 
+               grid), post processes and computes forecast metrics. Most of the data we acquire is raw output, not bias corrected,
+               with all ensemble members submitted.
+            </p>
+         </div>
+         <div class="container">
+            <p class="main_text"> 
+               This portal allows us to intercompare forecasts, compute ensemble statistics, test bias correction and other post processes, and produce a multi-model ensemble mean forecast.
+            </p>
+         </div>
+         <div class="container">
+            <p class="main_text">
+               We started the portal in February 2018. We plan to allow scientists to access the portal datasets and perform their own analysis using a Jupyterhub by the end of 2018. The portal analysis software is open source and available on Github. We’ll provide additional software and a space for analysis code sharing when the Jupyterhub opens.
+            </p>
+         </div>
+         <div class="container">
+            <p class="main_text">
+               We acquire data from archives and directly from contributors. Contributors control who has access to their data. If you wish to contribute your data, please contact us.
+            </p>
+         </div>
+         <div class="container">
+           <p class="main_text">
+            Our team consists of Nicholas Wayand, Edward Blanchard-Wrigglesworth, and Cecilia Bitz.
+           </p>
+         <br>
+             <div class="row centered">
+                 <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="http://www.nicwayand.com/" title=""><img src="./figures/random/Nic.jpg" class="img-fluid"></a>
+                 </div>
+                 <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="https://atmos.washington.edu/~ed/" title=""><img src="./figures/random/Ed.jpg" class="img-fluid"></a>
+                 </div>
+                 <div class="col-md-3 col-sm-3 col-xs-3">
+                    <a href="https://www.atmos.washington.edu/~bitz/" title=""><img src="./figures/random/CC.jpg" class="img-fluid"></a>
+                 </div>
+             </div>   
+          </div> 
+          <br>
+          <br>
+          <br>
+         <div class="container">
+             <p class="main_text">        
+                Acceptance of Terms. This website if for education and research only, and the University of Washington is not responsible for any  decisions made on the basis of the information on this website. This website is subject to further University of Washington Terms and Conditions at <a href="http://uw.edu/online/terms">http://uw.edu/online/terms.</a> 
+             </p>
+         </div>
+      </main>
+      <footer class="container">
+         <div class="col-md-4 col-sm-4 col-xs-4">
+            <p> This material is based upon research supported by the Office of Naval Research under Award Number N000141712986 </p>
+            <a title="This material is based upon research supported by the Office of Naval Research under Award Number N000141712986"><img src="./figures/random/220px-Office_of_Naval_Research_Official_Logo.png" class="img-fluid"></a>
+         </div>
+      </footer>
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">    </script>
+      <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="./assets/js/vendor/popper.min.js"></script>
+      <script src="./dist/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src='js/main.js'></script>
+   </body>
+</html>

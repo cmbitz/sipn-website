@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./figures/random/favicon.png">
+      
+    <title>First Ice-Free Date</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+      
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116293384-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116293384-1');
+    </script>    
+    
+ 
+      
+  </head>
+
+  <body>
+
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="./index">SIPN2</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PortalAbout.html">About</a>
+               </li>
+	       <li class="nav-item dropdown">
+		 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+		 <div class="dropdown-menu">
+		   <a class="dropdown-item" href="modelinformation.html">Model Information</a>
+		   <a class="dropdown-item" href="modelavailability.html">Forecast Availability</a>
+		   <a class="dropdown-item" href="methods.html">Methods</a>
+		 </div>
+	       </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="panarcticmaps.html">Pan-Arctic Maps</a>
+               </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Evaluation.html">Model Evaluation</a>
+               </li> 
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalmaps.html">Regional Maps</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalextent.html">Pan-Arctic & Regional Extents</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="observations.html">Observations</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+    <main role="main">
+
+      <div class="jumbotron">
+        <div class="container">
+          <!-- <h1 class="display-3">Welcome to the SIPN2 portal</h1> -->
+            <img src="./figures/random/sipn2_banner_full.png" class="img-fluid">
+        </div>
+      </div>
+       
+<div class="container">
+        <div class="row">
+        <div class="gallery col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">First Ice-Free and Ice-Advance Date</h1>
+	      <font size="4">
+	    <p>
+		First Ice-Free Day (IFD) is the day of the year upon which the sea ice concentration first drops below 15% during a given year. First Ice-Advance Day (IAD) is the day of the year after the summer minimum upon which the ice concencration first exceeds 15% during a given year. 
+	    </p> 
+	  <p>
+		 Dark gray indicates regions where the ice concentration was never below 15% (or never yet for 2019). It is too early to compute IAD for 2019. </font>
+	  </p>
+
+	    <p> <font size="3">See a Bug or Error? Please submit an <a href='https://github.com/NicWayand/ESIO/issues/new/choose'>Issue!</a> </font> </p>
+        </div>
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="All">All</button>
+            <button class="btn btn-default filter-button" data-filter="Obs">Observations</button>
+            <button class="btn btn-default filter-button" data-filter="Models">Models/Benchmarks</button>
+
+        </div>
+        <div class="row">
+
+
+        <div class="gallery col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 filter Obs All">
+<div align="center">   
+	   <div align="center"> <font size="6"> Observed IFD </font>  </div>  <br>
+                <img src="./figures/IFD/NSIDC_0081_IFD.png?27412" class="img-fluid">
+	   <p>  </p>  <p>  </p> <div align="center"> <font size="6"> Observed IAD </font>  </div>  <br>
+                <img src="./figures/IFD/NSIDC_0081_IAD.png?27412" width = 80% class="img-fluid">
+            </div>
+                <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/Calc_Ice_Free_Day.ipynb">Source Code.</a>
+            </div>
+
+
+        <div class="gallery col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 filter Models All">
+<div align="center">   
+	<br/> <br/> 	  <p>
+	      <font size="5">
+		Predictioned IFD for 2019 from our Damped Anomaly Benchmark Estimate and Models that forecast through the end of the year. Models were initialized over the last 28 days. </font>
+	                  </p> 
+                <img src="./figures/IFD/Models_IFD.png?27412" width = "85%" class="img-fluid">
+            </div>
+                <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/Calc_Ice_Free_Day.ipynb">Source Code.</a>
+		<br>
+		    We have regridded all model output to a common grid, but applied no further post processing.
+</p> <p> *Contains modified Copernicus Climate Change Service information 2018-2019, referring to ECMWF-C3S* and UKMO-C3S* models. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains 
+</p>
+		
+	</div>
+
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+      </main>
+      
+    
+
+    <footer class="container">
+      <p>&copy; SIPN2 2018</p>
+       <p>Question or comments? Email bitz@uw.edu</p> 
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">    </script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>      
+    
+  </body>
+</html>

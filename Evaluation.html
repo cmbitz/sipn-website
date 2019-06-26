@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./figures/random/favicon.png">
+      
+    <title>Model Evaluation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+      
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116293384-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116293384-1');
+    </script>    
+    
+ 
+      
+  </head>
+
+  <body>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="./index">SIPN2</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PortalAbout.html">About</a>
+               </li>
+	       <li class="nav-item dropdown">
+		 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+		 <div class="dropdown-menu">
+		   <a class="dropdown-item" href="modelinformation.html">Model Information</a>
+		   <a class="dropdown-item" href="modelavailability.html">Forecast Availability</a>
+		   <a class="dropdown-item" href="methods.html">Methods</a>
+		 </div>
+	       </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="panarcticmaps.html">Pan-Arctic Maps</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalmaps.html">Regional Maps</a>
+               </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Evaluation.html">Model Evaluation</a>
+               </li>               
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalextent.html">Pan-Arctic & Regional Extents</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="observations.html">Observations</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+    <main role="main">
+
+      <div class="jumbotron">
+        <div class="container">
+          <!-- <h1 class="display-3">Welcome to the SIPN2 portal</h1> -->
+            <img src="./figures/random/sipn2_banner_full.png" class="img-fluid">
+        </div>
+      </div>
+       
+<div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title"> Model Evaluation</h1>
+        </div>
+        <div class="row">
+            <div align="center">
+                
+              <p> <b> Figures based on our paper <a href='https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2018GL081565'>Wayand, Bitz, Blanchard-Wrigglesworth (2019).  A year-round sub-seasonal to seasonal sea ice prediction portal. in Geophysical Research Letters.</a> We examined the period January to November 2019.
+		</b>
+		</p><p>
+The figures below contain modified Copernicus Climate Change Service information 2018 and 2019. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains
+	      </p>
+                
+                <button class="btn btn-default filter-button" data-filter="All">All</button>
+                <button class="btn btn-default filter-button" data-filter="BrierScore">SIC Brier Scores</button>
+                <button class="btn btn-default filter-button" data-filter="SIT">SIT Comparison</button>
+                
+            </div>
+        </div>
+        <div class="row">
+
+          <div class="gallery_product col-lg-10 col-md-6 col-sm-1 col-xs-1 filter All BrierScore">
+            <h3 align="center"> Pan-Arctic Brier Scores </h3>
+                <a href="./figures/model/Eval/BSS_by_lead_time_PanArctic_New.png?108658402" title="">
+                    <img src="./figures/model/Eval/BSS_by_lead_time_PanArctic_New.png?108658402" class="img-fluid"></a>
+                <p> <b> (top) Brier Scores averaged over the pan-Arctic as a function of model and lead time for forecasts initialized January-November 2018. Thick dashed red line shows the multi-model mean. *The CAFS model domain is smaller than other models, thus its BS values do not reflect errors outside the CAFS' domain. The NRL-NESM-EXT model scores increase sharply at longer lead times because this model only has extended forecasts during summer months when BS tends to be higher. (bottom) Number of initialization periods (between January 2018 and present) used for the MME mean. Individual models have fewer periods based on their initialization frequency. From Wayand et al. (2019)</b> </p>
+            </div>
+            
+            <div class="gallery_product col-lg-10 col-md-6 col-sm-1 col-xs-1 filter All BrierScore">
+            <h3 align="center"> Pan-Arctic Brier Scores </h3>
+                <a href="./figures/model/Eval/BSS_by_init_time_28_days.png?108658402" title="">
+                    <img src="./figures/model/Eval/BSS_by_init_time_28_days.png?108658402" class="img-fluid"></a>
+                <p> <b> Brier Scores for the 4 week lead time for all initialization periods. The ECMWF-C3S model only initializes once per month, denoted with red stars with no line. From Wayand et al. (2019)</b> </p>
+            </div>
+	    
+            <div class="gallery_product col-lg-10 col-md-6 col-sm-1 col-xs-1 filter All BrierScore">
+            <h3 align="center"> Brier Score at 4 week lead time</h3>
+                <a href="./figures/model/Eval/BSS_Avg_all_Inits_028_day_lead_time.png?108658402" title="">
+                    <img src="./figures/model/Eval/BSS_Avg_all_Inits_028_day_lead_time.png?108658402" class="img-fluid"></a>
+                <p> <b> Mean BS over all initialization times for a lead time of 4 week. Numbers in subplot titles indicate spatially averaged BS for forecasts initialized January 2018 to present. From Wayand et al. (2019)</b> </p>
+            </div>                        
+                        
+            <div class="gallery_product col-lg-10 col-md-6 col-sm-1 col-xs-1 filter All BrierScore">
+            <h3 align="center"> Brier Score at 4 week lead time</h3>
+                <a href="./figures/model/Eval/BSS_week_Multi_by_DA_Type.png?108658402" title="">
+                    <img src="./figures/model/Eval/BSS_week_Multi_by_DA_Type.png?108658402" class="img-fluid"></a>
+                <p> <b> BS for SIC forecasts at 0 to 4 week lead times (connected dots from left to right, respectively) grouped by SIC initialization method and ordered by increasing method complexity from left to right. SIC - Sea ice concentration. SIT - Sea ice thickness. NG - Nudging, DI - Direct insertion, 3DVAR - 3D variance, EnKF - Ensemble Kalman Filter, Variable - Average of multiple methods. *CAFS SIT was initialized with DI on February 14 2018. From Wayand et al. (2019)</b> </p>
+            </div>
+            
+            
+            <div class="gallery_product col-lg-10 col-md-6 col-sm-1 col-xs-1 filter All SIT">
+            <h3 align="center"> Brier Score at 4 week lead time</h3>
+                <a href="./figures/model/Eval/SIT_maps_all_NEW_init_day_0_to_6_ft.png?108658402" title="">
+                    <img src="./figures/model/Eval/SIT_maps_all_NEW_init_day_0_to_6_ft.png?108658402" class="img-fluid"></a>
+                <p> <b> Observed and Modeled mean SIT at a 0 week lead time, valid for all IceBridge
+ flights in March and April of 2018. Black lines show IceBridge flight paths. Bottom left panel shows scatter plots between each of the three dynamic models and observations (colors defined in titles). From Wayand et al. (2019)</b> </p>
+            </div>
+            
+            
+            
+            
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+      </main>
+      
+    
+
+    <footer class="container">
+      <p>&copy; SIPN2 2018</p>
+       <p>Question or comments? Email nicway@uw.edu or bitz@uw.edu</p> 
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">    </script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>      
+    
+  </body>
+</html>

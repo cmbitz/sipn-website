@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./figures/random/favicon.png">
+      
+    <title>Model Forecast Availability</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+      
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116293384-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116293384-1');
+    </script>    
+    
+ 
+      
+  </head>
+
+  <body>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="./index">SIPN2</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PortalAbout.html">About</a>
+               </li>
+	       <li class="nav-item dropdown">
+		 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+		 <div class="dropdown-menu">
+		   <a class="dropdown-item" href="modelinformation.html">Model Information</a>
+		   <a class="dropdown-item" href="modelavailability.html">Forecast Availability</a>
+		   <a class="dropdown-item" href="methods.html">Methods</a>
+		 </div>
+	       </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="panarcticmaps.html">Pan-Arctic Maps</a>
+               </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Evaluation.html">Model Evaluation</a>
+               </li> 
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalmaps.html">Regional Maps</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalextent.html">Pan-Arctic & Regional Extents</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="observations.html">Observations</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <main role="main">
+
+      <div class="jumbotron">
+        <div class="container">
+          <!-- <h1 class="display-3">Welcome to the SIPN2 portal</h1> -->
+            <img src="./figures/random/sipn2_banner_full.png" class="img-fluid">
+        </div>
+      </div>
+       
+<div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Forecast Availability</h1>
+        </div>
+
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="All">All plots</button>
+            <button class="btn btn-default filter-button" data-filter="Init_recent">Recent Initialization times</button>
+            <button class="btn btn-default filter-button" data-filter="Init">All Initialization times</button>
+
+            <!--<button class="btn btn-default filter-button" data-filter="both">Coverage</button> -->
+        </div>
+        <div class="row">
+    
+            <div class="gallery_product col-lg-12 col-md-12 col-sm-1 col-xs-1 filter Init_recent All">
+                <img src="./figures/model/all_model/sic/Init_avail_recent.png?342038402" class="img-fluid">
+                Last 30-days of model availability. Each dot represents a single model initialization time (forecast lead times vary). <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_forecast_availability.ipynb">Source Code.</a>
+            </div>
+            
+            <div class="gallery_product col-lg-12 col-md-12 col-sm-1 col-xs-1 filter Init All">
+                <img src="./figures/model/all_model/sic/Init_avail.png?342038402" class="img-fluid">
+               Last 3 years of model availability. Each dot represents a single model initialization time (forecast lead times vary). <a href="https://github.com/NicWayand/ESIO/blob/master/notebooks/plot_forecast_availability.ipynb">Source Code.</a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+      </main>
+      
+    
+
+    <footer class="container">
+      <p>&copy; SIPN2 2018</p>
+       <p>Question or comments? Email nicway@uw.edu</p> 
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">    </script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>      
+    
+  </body>
+</html>

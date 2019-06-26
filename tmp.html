@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./figures/random/favicon.png">
+
+      
+    <title>Sea Ice Prediction Network Phase II (SIPN2)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+      
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116293384-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116293384-1');
+    </script>    
+
+      
+  </head>
+
+  <body>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="./index">SIPN2</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="PortalAbout.html">About</a>
+               </li>
+	       <li class="nav-item dropdown">
+		 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Documentation</a>
+		 <div class="dropdown-menu">
+		   <a class="dropdown-item" href="modelinformation.html">Model Information</a>
+		   <a class="dropdown-item" href="modelavailability.html">Forecast Availability</a>
+		   <a class="dropdown-item" href="methods.html">Methods</a>
+		 </div>
+	       </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="panarcticmaps.html">Pan-Arctic Maps</a>
+               </li>
+               <li class="nav-item">
+                   <b><a class="nav-link" href="Evaluation.html">Model Evaluation (NEW!)</a></b>
+               </li>   
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalmaps.html">Regional Maps</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="regionalextent.html">Pan-Arctic & Regional Extents</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="observations.html">Observations</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+    <main role="main">
+
+      <div class="jumbotron">
+        <div class="container">
+          <!-- <h1 class="display-3">Welcome to the SIPN2 portal</h1> -->
+            <img src="./figures/random/sipn2_banner_full.png" class="img-fluid">
+        </div>
+      </div>
+       
+    <div class="container"> 
+        
+            <font size="4">
+Update! The Polar Pangeo Jupyter Hub has lanched <a href='https://polar.pangeo.io'>(https://polar.pangeo.io)</a>, which allows acccess to the SIPN2 datasets. Read more about it in <a href='https://medium.com/pangeo/polar-deployment-of-pangeo-96865774287c'>this blog</a>. 
+            </font>
+        </p>
+        <br>
+        <br>    <p>
+            <font size="4">     
+	      The forecast pan-Arctic maps aren't being updated at the moment. The regional extents and observations should be up to date now. Hope to have these fixed in a few days. </a>
+                </font>
+        </p>
+        <br>        
+        
+        <div class="row centered">
+          <div class="col-md-6 col-sm-4 col-xs-6">
+            <u><h4> Forecast Pan-Arctic Maps </h4></u>
+            <a href="./panarcticmaps.html" title=""><img src="./figures/model/all_model/sic/maps_weekly_NEW/panArctic_mean_forecast_2018-08-05_99.gif?"+new Date().getTime();  width="85%" height="85%" class="img-fluid"></a>
+        </div>
+            
+        <div class="col-md-6 col-sm-4 col-xs-4">
+            <u><h4> 2018 Forecast Evaluation </h4></u>
+            <a href="./Evaluation.html" title=""><img src="./figures/model/Eval/BSS_by_init_time_28_days.png?"+new Date().getTime();   width="75%" height="75%" class="img-fluid"></a>
+          <br>
+          <br>
+          <br>
+        </div> 
+            
+          <div class="col-md-6 col-sm-4 col-xs-4">
+            <u><h4> Forecast Pan-Arctic & Regional Extents </h4></u>
+	    <!--Under Repair -->
+            <a href="./regionalextent.html" title=""><img src="./figures/model/all_model/sic/timeseries/panArctic_extent_forecast_raw_predicted.png?"+new Date().getTime(); class="img-fluid"></a> 
+        </div>   
+            
+         <div class="col-md-6 col-sm-4 col-xs-4">
+              <u><h4>Observations</h4></u>
+            <a href="./observations.html" title=""><img src="./figures/obs/NSIDC_0081/standard/panArcticSIC_SIC_anomaly.png?12052"  width="70%" height="70%" class="img-fluid"></a>
+          </div>
+
+        <div class="col-md-6 col-sm-4 col-xs-4">
+            <u><h4> Model Information & Sources </h4></u>
+            <a href="./modelinformation.html" title=""><img src="./ModelInfoScreenShot.png?"+new Date().getTime();  class="img-fluid"></a>
+        </div>
+            
+      
+            
+            
+        </div>
+    </div>
+          <br>
+          <br>
+          <br>
+
+      </main>
+      
+    
+
+    <footer class="container">
+      <p>&copy; SIPN2 2018</p>
+       <p>Question or comments? Email nicway@uw.edu</p> 
+       <br>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <p> This material is based upon research supported by the Office of Naval Research under Award Number N000141712986 </p>
+            <a title="This material is based upon research supported by the Office of Naval Research under Award Number N000141712986"><img src="./figures/random/220px-Office_of_Naval_Research_Official_Logo.png" class="img-fluid"></a>
+        </div>
+        
+        
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">    </script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src='js/main.js'></script>
+      
+    
+  </body>
+</html>
